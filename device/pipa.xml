@@ -13,4 +13,9 @@
 
     <!-- kernel -->
     <project path="kernel/xiaomi/sm8250" name="rifux/android_kernel_xiaomi_sm8250/" remote="github" revision="lineage-21"  clone-depth="1000" />
+
+    <!-- lindroid -->
+    <project path="vendor/lindroid" name="Linux-on-droid/vendor_lindroid" revision="staging/lindroid-21-stylus"  remote="github" />
+    <project path="external/lxc" name="Linux-on-droid/external_lxc" revision="lindroid-21"  remote="github" />
+    <project path="external/libhybris" name="Linux-on-droid/libhybris" revision="staging/lindroid-21"  remote="github" />
 </manifest>
