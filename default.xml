@@ -1337,5 +1337,5 @@
 
   <include name="snippets/lineage.xml" />
   <include name="snippets/crdroid.xml" />
-  <include name="pipa.xml" />
+  <include name="device/pipa.xml" />
 </manifest>
