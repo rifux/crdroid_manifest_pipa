@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<!-- <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
     <!-- hardware -->
     <project path="hardware/xiaomi" name="LineageOS/android_hardware_xiaomi" revision="lineage-21" remote="github" />
@@ -13,4 +13,4 @@
 
     <!-- kernel -->
     <project path="kernel/xiaomi/sm8250" name="DD3Boh/android_kernel_xiaomi_sm8250" remote="github" revision="lineage-21"  clone-depth="1000" />
-</manifest>
+</manifest> -->
