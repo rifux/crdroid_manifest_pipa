@@ -29,30 +29,64 @@ $ chmod a+x ~/bin/repo
 
 ### 1.2 Initializing Repo ###
 
-```bash
-# Create a directory for the source files
-# This can be located anywhere (as long as the fs is case-sensitive)
-$ mkdir crDroid
-$ cd crDroid
+Create a directory for the source files
+This can be located anywhere (as long as the fs is case-sensitive)
 
-# Install Repo in the created directory
-$ repo init -u https://github.com/rifux/crdroid_manifest_pipa.git -b lindroid-14.0 --git-lfs
+```bash
+mkdir crdroid-lindroid && \
+cd crdroid-lindroid
+```
+
+Install Repo in the created directory
+
+```bash
+repo init -u https://github.com/rifux/crdroid_manifest_pipa.git -b lindroid-14.0 --git-lfs
 ```
 
 This is what you will run each time you want to pull in upstream changes. Keep in mind that on your
 first run, it is expected to take a while as it will download all the required Android source files
 and their change histories.
 
-```bash
-# Let Repo take care of all the hard work
-$ repo sync
-```
+
+Let `repo` take care of all the hard work
 
 ```bash
-# Run to prepare our devices list
-$ . build/envsetup.sh
-# ... now run
-$ brunch devicecodename
+repo sync
+```
+
+Fetch Xiaomi Pad 6 dependencies
+
+```bash
+mkdir -pv ../crdroid-pipa-deps && \
+wget --output-document ../crdroid-pipa-deps/prepare-pipa-deps.sh \
+    https://raw.githubusercontent.com/rifux/crdroid_manifest_pipa/lindroid-14.0/device/pipa-prepare.sh && \
+chmod +x ../crdroid-pipa-deps/prepare-pipa-deps.sh
+```
+
+And then download it
+
+```bash
+../crdroid-pipa-deps/prepare-pipa-deps.sh
+```
+
+Let's prepare our devices list:
+
+Firstly, run
+
+```bash
+bash
+```
+
+To enter bash terminal shell [__*it's necessary!*__]
+
+```bash
+. build/envsetup.sh
+```
+
+__*To start building enter*__
+
+```bash
+brunch pipa
 ```
 
 ## 2. Contributions ##

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<!-- <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
     <!-- hardware -->
     <project path="hardware/xiaomi" name="LineageOS/android_hardware_xiaomi" revision="lineage-21" remote="github" />
@@ -18,4 +18,4 @@
     <project path="vendor/lindroid" name="Linux-on-droid/vendor_lindroid" revision="staging/lindroid-21-stylus"  remote="github" />
     <project path="external/lxc" name="Linux-on-droid/external_lxc" revision="lindroid-21"  remote="github" />
     <project path="external/libhybris" name="Linux-on-droid/libhybris" revision="staging/lindroid-21"  remote="github" />
-</manifest>
+</manifest> -->
