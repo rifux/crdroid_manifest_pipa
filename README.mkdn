@@ -60,13 +60,14 @@ Fetch Xiaomi Pad 6 dependencies
 mkdir -pv ../crdroid-pipa-deps && \
 wget --output-document ../crdroid-pipa-deps/prepare-pipa-deps.sh \
     https://raw.githubusercontent.com/rifux/crdroid_manifest_pipa/lindroid-14.0/device/pipa-prepare.sh && \
-chmod +x ../crdroid-pipa-deps/prepare-pipa-deps.sh
+chmod +x ../crdroid-pipa-deps/prepare-pipa-deps.sh && \
+cd ../crdroid-pipa-deps
 ```
 
 And then download it
 
 ```bash
-../crdroid-pipa-deps/prepare-pipa-deps.sh
+prepare-pipa-deps.sh
 ```
 
 Let's prepare our devices list:
@@ -74,6 +75,7 @@ Let's prepare our devices list:
 Firstly, run
 
 ```bash
+cd ../crdroid-lindroid && \
 bash
 ```
 
