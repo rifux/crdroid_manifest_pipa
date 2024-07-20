@@ -12,7 +12,7 @@ git clone https://github.com/rifux/android_device_xiaomi_pipa -b lineage-21 ../c
 git clone https://github.com/rifux/android_device_xiaomi_sm8250-common -b lineage-21 ../crdroid-lindroid/device/xiaomi/sm8250-common
 
 # Kernel
-git clone https://github.com/rifux/android_kernel_xiaomi_sm8250 -b lineage-21 ../crdroid-lindroid/kernel/xiaomi/sm8250
+git clone https://github.com/rifux/android_kernel_xiaomi_sm8250 -b lineage-21-lindroid ../crdroid-lindroid/kernel/xiaomi/sm8250
 
 # Lindroid
 git clone https://github.com/Linux-on-droid/vendor_lindroid -b staging/lindroid-21-stylus ../crdroid-lindroid/vendor/lindroid
